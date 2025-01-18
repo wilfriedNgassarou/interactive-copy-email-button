@@ -3,6 +3,7 @@ import { useState } from "react"
 import { Email } from "./components/svgs/email";
 import { Copy } from "./components/svgs/copy";
 import { Check } from "./components/svgs/check";
+import { Credits } from "./components/credits";
 
 function App() {
   const [state, setState] = useState<'idle' | 'copied'>('idle')
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <section className="w-full h-dvh bg-white flex justify-center items-center">
+      <Credits />
       <div className="w-80 h-60 group flex items-center justify-center">
         <div 
           onClick={handleClick}
